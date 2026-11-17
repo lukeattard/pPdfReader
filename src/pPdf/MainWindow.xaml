@@ -36,8 +36,8 @@
                     <Button x:Name="BackButton" Style="{StaticResource ToolButton}" Content="&#xE72B;" ToolTip="Back to where you were (Alt+Left)" Click="OnBack" />
                     <Button x:Name="ForwardButton" Style="{StaticResource ToolButton}" Content="&#xE72A;" ToolTip="Forward (Alt+Right)" Click="OnForward" />
                     <Button x:Name="PrevButton" Style="{StaticResource ToolButton}" Content="&#xE70E;" ToolTip="Previous page" Click="OnPrevPage" />
-                    <TextBox x:Name="PageBox" Width="48" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="2,0"
-                             ToolTip="Go to page" KeyDown="OnPageBoxKeyDown" GotKeyboardFocus="OnBoxGotFocus" />
+                    <TextBox x:Name="PageBox" Width="60" Style="{StaticResource FormFieldBox}" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="2,0"
+                             ToolTip="Go to page" KeyDown="OnPageBoxKeyDown" GotKeyboardFocus="OnBoxGotFocus" InputMethod.IsInputMethodEnabled="False" />
                     <TextBlock x:Name="PageCountText" VerticalAlignment="Center" Margin="2,0,6,0" Foreground="{DynamicResource SubtleTextBrush}" Text="/ 0" />
                     <Button x:Name="NextButton" Style="{StaticResource ToolButton}" Content="&#xE70D;" ToolTip="Next page" Click="OnNextPage" />
                     <Border Style="{StaticResource ToolSeparator}" />

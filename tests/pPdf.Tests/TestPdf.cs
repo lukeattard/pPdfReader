@@ -1,3 +1,4 @@
+using PdfSharp;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 
@@ -8,6 +9,7 @@ static class TestPdf
 {
     public static byte[] Create(string[][] pages, int rotate = 0, double width = 595, double height = 842)
     {
+        PdfSharpLicense.SetAgplLicense();
         var doc = new PdfDocument();
         foreach (var lines in pages)
         {

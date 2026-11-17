@@ -11,6 +11,7 @@ using pPdf.Printing;
 using pPdf.Services;
 using pPdf.Viewer;
 using pPdf.Views;
+using PdfSharp;
 
 namespace pPdf;
 
@@ -31,6 +32,7 @@ public partial class MainWindow : Window
     public MainWindow(AppSettings settings)
     {
         _settings = settings;
+        PdfSharpLicense.SetAgplLicense();
         InitializeComponent();
 
         RestoreWindowBounds();
